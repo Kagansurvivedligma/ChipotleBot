@@ -108,9 +108,11 @@ public class Food {
         // Add charges for paid toppings
         if (hasGuacamole) {
             totalPrice += 2.95;  
+            totalCalories += 50;
         }
         if (hasQuesoBlanco) {
             totalPrice += 1.75;  
+            totalCalories += 50;
         }
         if (hasFreshTomatoSalsa){
             totalCalories += 0.50;
@@ -125,6 +127,7 @@ public class Food {
         System.out.println(YELLOW + "\nYour burrito is ready! Here are what you made:" + RESET);
         System.out.println(YELLOW + "Meat: " + capitalize(meat) + RESET);
         System.out.println(YELLOW +"Rice: " + capitalize(rice)+ RESET);
+        System.out.println(YELLOW +"Rice: " + capitalize(beans)+ RESET);
 
         // Display each topping based on whether the user selected it
         if (hasGuacamole) System.out.println(YELLOW + "Guacamole: ($2.95)"+ RESET);
